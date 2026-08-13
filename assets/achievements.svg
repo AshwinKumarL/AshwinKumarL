@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+  <title id="title">Ashwin Kumar L achievements</title><desc id="desc">Animated purple and red neon achievement cards</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#10071b"/><stop offset=".5" stop-color="#27103b"/><stop offset="1" stop-color="#270914"/></linearGradient>
+    <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#c84bff"/><stop offset="1" stop-color="#ff3b5c"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="300" rx="22" fill="url(#bg)" stroke="url(#edge)" stroke-width="3"/>
+  <g fill="none" stroke="url(#edge)" opacity=".75" filter="url(#glow)"><path d="M35 58H965M35 242H965" stroke-width="2"><animate attributeName="stroke-dasharray" values="20 10;5 25;20 10" dur="3s" repeatCount="indefinite"/></path></g>
+  <text x="500" y="54" text-anchor="middle" fill="#f7efff" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4">ACHIEVEMENTS UNLOCKED</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle"><g fill="#c84bff"><text x="165" y="135" font-size="44">⚔</text><text x="500" y="135" font-size="44">★</text><text x="835" y="135" font-size="44">✦</text></g><g fill="#f7efff" font-size="18" font-weight="700"><text x="165" y="170">150+ LEETCODE</text><text x="500" y="170">HACKERRANK GOLD</text><text x="835" y="170">KICK STATE — 1ST</text></g><g fill="#ff8fa3" font-size="15"><text x="165" y="205">Problem Solver</text><text x="500" y="205">Coding Achievement</text><text x="835" y="205">Competition Winner</text></g></g>
+  <circle cx="55" cy="150" r="5" fill="#ff3b5c"><animate attributeName="opacity" values=".2;1;.2" dur="1.4s" repeatCount="indefinite"/></circle><circle cx="945" cy="150" r="5" fill="#c84bff"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+</svg>
