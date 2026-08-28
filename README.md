@@ -18,9 +18,9 @@
 ## ⚡ Tech Stack & Tooling
 
 <div align="center">
-  <!-- Interactive & Animated Skill Icons -->
+  <!-- Core Skill Icons (Python, C, Java, Git, GitHub, VS Code) -->
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,c,java,cpp,javascript,react,nodejs,html,css,git,github,vscode,figma,postman&perline=7&theme=dark" alt="Ashwin's Tech Stack" />
+    <img src="https://skillicons.dev/icons?i=python,c,java,git,github,vscode&theme=dark" alt="Ashwin's Tech Stack" />
   </a>
 </div>
 
@@ -28,10 +28,12 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-0B424C?style=for-the-badge&logo=python&logoColor=00F0FF" alt="Python" />
-  <img src="https://img.shields.io/badge/AI_&_Machine_Learning-041315?style=for-the-badge&logo=openai&logoColor=00D68F" alt="AI ML" />
-  <img src="https://img.shields.io/badge/Computer_Vision-082226?style=for-the-badge&logo=opencv&logoColor=14B8A6" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/Full--Stack_Dev-092225?style=for-the-badge&logo=react&logoColor=00F0FF" alt="Full Stack" />
-  <img src="https://img.shields.io/badge/UI/UX_Design-0B2B2F?style=for-the-badge&logo=figma&logoColor=00D68F" alt="UI UX" />
+  <img src="https://img.shields.io/badge/C_Language-041315?style=for-the-badge&logo=c&logoColor=00D68F" alt="C" />
+  <img src="https://img.shields.io/badge/Java-082226?style=for-the-badge&logo=openjdk&logoColor=14B8A6" alt="Java" />
+  <img src="https://img.shields.io/badge/AI_Agents_&_LLMs-092225?style=for-the-badge&logo=openai&logoColor=00F0FF" alt="AI Agents" />
+  <img src="https://img.shields.io/badge/Artificial_Intelligence-0B2B2F?style=for-the-badge&logo=tensorflow&logoColor=00D68F" alt="AI" />
+  <img src="https://img.shields.io/badge/Git_&_GitHub-0B424C?style=for-the-badge&logo=github&logoColor=00F0FF" alt="Git & GitHub" />
+  <img src="https://img.shields.io/badge/VS_Code-041315?style=for-the-badge&logo=visualstudiocode&logoColor=00D68F" alt="VS Code" />
 </div>
 
 ---
