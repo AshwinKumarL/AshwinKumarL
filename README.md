@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- 🔮 Cyberpunk Animated ASCII Portrait & Engineering HUD -->
-  <img src="assets/ascii-header.gif" alt="Ashwin Kumar L - Animated ASCII Art Portrait & Engineering Terminal" width="100%" />
+  <!-- 🔮 Cyberpunk Engineering HUD & Photo Banner -->
+  <img src="assets/profile-banner.png" alt="Ashwin Kumar L — Engineering Profile HUD" width="100%" />
 
   <br/><br/>
 
