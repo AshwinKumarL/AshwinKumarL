@@ -1,62 +1,110 @@
 <div align="center">
-  <img src="assets/minecraft-header.gif" alt="Minecraft-inspired purple and red neon world" width="100%" />
+  <!-- 🔮 Hero Cyberpunk Minecraft Animated Header -->
+  <img src="assets/minecraft-header.gif" alt="Ashwin Kumar L - Futuristic Cyberpunk Neon Banner" width="100%" />
 
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&pause=900&color=C84BFF&center=true&vCenter=true&width=760&lines=ASHWIN+KUMAR+L;CSE+STUDENT+%E2%80%A2+AI%2FML+DEVELOPER+%E2%80%A2+BUILDER;BUILDING+IDEAS+INTO+INTELLIGENT+SYSTEMS" alt="Animated introduction" />
+  <br/><br/>
 
-  <img src="assets/achievements.svg" alt="Animated achievements: 150 plus LeetCode, HackerRank Gold, Code Rush second place, Kick State first place, NPTEL top 5 percent, Cambridge Linguaskill C1" width="100%" />
+  <!-- ⚡ Dynamic Typing Header -->
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=26&pause=1000&color=C84BFF&center=true&vCenter=true&width=780&lines=ASHWIN+KUMAR+L;AI+%2F+ML+DEVELOPER+%E2%80%A2+SYSTEMS+BUILDER;150%2B+LEETCODE+%E2%80%A2+IDEATHON+WINNER;BUILDING+IDEAS+INTO+INTELLIGENT+SYSTEMS" alt="Typing SVG" />
+
+  <br/><br/>
+
+  <!-- 🏆 Modern Animated Achievements HUD -->
+  <img src="assets/achievements.svg" alt="Ashwin Kumar L Achievements: 150+ LeetCode, HackerRank Gold in Python, Kick Start: Idea Challenge 1st, Code Rush Coding Contest 2nd" width="100%" />
 </div>
 
-## 🧠 About me
+<br/>
 
-```text
-🎓 B.E. Computer Science and Engineering — Sri Ramakrishna Engineering College, Coimbatore
-💻 Python • Artificial Intelligence • Machine Learning • Software Development
-🧩 150+ LeetCode problems solved
-🚀 Building AI, computer vision, and document-processing projects
-🎮 Gamer interested in strategy, automation, and problem-solving
+## 🧠 About Me
+
+```yaml
+Name: Ashwin Kumar L
+Education: B.E. in Computer Science & Engineering (Sri Ramakrishna Engineering College, Coimbatore)
+Specialization: Artificial Intelligence, Machine Learning & Intelligent Software Engineering
+Problem Solving: 150+ LeetCode algorithms solved • HackerRank Gold Badge in Python
+Current Focus: Computer Vision, Large Language Models & Deep Learning Pipelines
+Interests: Autonomous Systems, Competitive Programming, Game Strategy & Automation
 ```
 
-## ⚡ Tech stack
+---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-16111F?style=for-the-badge&logo=python&logoColor=FFD343" alt="Python" />
-  <img src="https://img.shields.io/badge/C-16111F?style=for-the-badge&logo=c&logoColor=A855F7" alt="C" />
-  <img src="https://img.shields.io/badge/Java-16111F?style=for-the-badge&logo=openjdk&logoColor=FF3B5C" alt="Java" />
-  <img src="https://img.shields.io/badge/Canva-16111F?style=for-the-badge&logo=canva&logoColor=C84BFF" alt="Canva" />
-  <img src="https://img.shields.io/badge/Figma-16111F?style=for-the-badge&logo=figma&logoColor=FF3B5C" alt="Figma" />
-</p>
+## ⚡ Tech Stack & Tooling
 
-## 📊 Live GitHub stats
+<div align="center">
+  <!-- Interactive & Animated Skill Icons -->
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,c,java,cpp,javascript,react,nodejs,html,css,git,github,vscode,figma,postman&perline=7&theme=dark" alt="Ashwin's Tech Stack" />
+  </a>
+</div>
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=AshwinKumarL&show_icons=true&theme=transparent&title_color=C84BFF&icon_color=FF3B5C&text_color=F7EFFF&border_color=7B2CBF&include_all_commits=true&count_private=true" alt="Ashwin's live GitHub statistics" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshwinKumarL&layout=compact&theme=transparent&title_color=C84BFF&text_color=F7EFFF&border_color=7B2CBF" alt="Ashwin's top languages" />
-</p>
+<br/>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=AshwinKumarL&theme=transparent&ring=C84BFF&fire=FF3B5C&currStreakLabel=F7EFFF&sideLabels=F7EFFF&dates=BFA8D8&border=7B2CBF" alt="Ashwin's GitHub streak" />
-</p>
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/AI_&_Machine_Learning-7B2CBF?style=for-the-badge&logo=openai&logoColor=white" alt="AI ML" />
+  <img src="https://img.shields.io/badge/Computer_Vision-FF3B5C?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/Full--Stack_Dev-00F5FF?style=for-the-badge&logo=react&logoColor=0d0818" alt="Full Stack" />
+  <img src="https://img.shields.io/badge/UI/UX_Design-C84BFF?style=for-the-badge&logo=figma&logoColor=white" alt="UI UX" />
+</div>
 
-## 🧱 Contribution world
+---
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AshwinKumarL/AshwinKumarL/output/github-contribution-grid-snake-dark.svg" alt="Animated contribution snake generated from Ashwin's real GitHub contribution graph" />
-</p>
+## 📊 Live GitHub Analytics
 
-> The contribution animation is generated daily from the public contribution graph. Run the included workflow once after pushing this repository to create the first animation.
+<div align="center">
+  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=AshwinKumarL&show_icons=true&theme=radical&title_color=c84bff&text_color=ffffff&icon_color=00f5ff&border_color=7b2cbf&bg_color=0d0818&hide_border=false&include_all_commits=true&count_private=true" alt="Ashwin's GitHub Stats" />
+  &nbsp;
+  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=AshwinKumarL&layout=compact&theme=radical&title_color=c84bff&text_color=ffffff&border_color=7b2cbf&bg_color=0d0818&hide_border=false" alt="Ashwin's Top Languages" />
+</div>
 
-## 🏆 Trophies and activity
+<br/>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AshwinKumarL&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="GitHub trophies" />
-</p>
+<div align="center">
+  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=AshwinKumarL&theme=radical&ring=c84bff&fire=ff3b5c&currStreakLabel=00f5ff&sideLabels=ffffff&dates=bfa8d8&border=7b2cbf&background=0D0818" alt="Ashwin's Streak Stats" />
+</div>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AshwinKumarL&bg_color=0D0818&color=F7EFFF&line=C84BFF&point=FF3B5C&area=true&hide_border=true" alt="GitHub activity graph" />
-</p>
+---
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AshwinKumarL&label=PROFILE+VIEWS&color=7B2CBF&style=for-the-badge" alt="Profile views" />
-</p>
+## 🏆 GitHub Trophies & Milestones
 
-<!-- Built for AshwinKumarL. Local project assets use relative paths; the contribution animation is published by GitHub Actions to the output branch. -->
+<div align="center">
+  <img src="https://github-profile-trophy-eight.vercel.app/?username=AshwinKumarL&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
+</div>
+
+---
+
+## 🧱 Contribution Matrix
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AshwinKumarL/AshwinKumarL/output/github-contribution-grid-snake-dark.svg" onerror="this.onerror=null;this.src='assets/github-contribution-grid-snake-dark.svg';" alt="Animated Contribution Snake" width="100%" />
+</div>
+
+> ⚡ *Real-time contribution snake is synchronized daily via GitHub Actions.*
+
+---
+
+## 🌐 Connect & Network
+
+<div align="center">
+  <a href="https://github.com/AshwinKumarL">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  &nbsp;
+  <a href="https://leetcode.com/u/AshwinKumarL/">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
+  </a>
+  &nbsp;
+  <a href="mailto:ashwin.kumar.cse@example.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=AshwinKumarL&label=PROFILE+VISITS&color=7B2CBF&style=for-the-badge" alt="Profile Visits" />
+</div>
