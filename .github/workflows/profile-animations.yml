@@ -1,4 +1,4 @@
-name: Generate contribution animation
+name: Generate 3D Contribution Matrix
 
 on:
   schedule:
@@ -13,22 +13,19 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    name: generate-github-profile-3d-contrib
     steps:
-      - name: Generate contribution snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: AshwinKumarL
-          outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00F0FF&color_dots=#061a1d,#0b424c,#0e5058,#14b8a6,#00d68f
-            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=#00D68F&color_dots=#e6fffa,#99f6e4,#2dd4bf,#14b8a6,#0b424c
-
-      - name: Publish animation
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+      - uses: actions/checkout@v4
+      - uses: y-cl/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: AshwinKumarL
+      - name: Commit & Push changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          git commit -m "Synchronize 3D contribution matrix" || exit 0
+          git push

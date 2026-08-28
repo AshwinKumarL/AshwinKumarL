@@ -60,13 +60,13 @@
 
 ---
 
-## 🧱 Contribution Matrix
+## 🧱 3D Contribution Matrix
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AshwinKumarL/AshwinKumarL/output/github-contribution-grid-snake-dark.svg" onerror="this.onerror=null;this.src='assets/github-contribution-grid-snake-dark.svg';" alt="Animated Contribution Snake" width="100%" />
+  <img src="assets/github-contribution-3d.gif" alt="Animated 3D Isometric Contribution Matrix - Ashwin Kumar L" width="100%" />
 </div>
 
-> ⚡ *Real-time contribution snake is synchronized daily via GitHub Actions.*
+> ⚡ *Real-time 3D isometric contribution skyline synchronized with GitHub activity.*
 
 ---
 
