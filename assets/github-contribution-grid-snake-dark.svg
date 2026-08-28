@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 160" width="100%" height="100%">
   <defs>
     <linearGradient id="snakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5ff" />
-      <stop offset="50%" stop-color="#c84bff" />
-      <stop offset="100%" stop-color="#ff3b5c" />
+      <stop offset="0%" stop-color="#00d68f" />
+      <stop offset="50%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#00f0ff" />
     </linearGradient>
     <filter id="dotGlow">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -27,57 +27,57 @@
     </style>
   </defs>
 
-  <rect width="850" height="160" rx="12" fill="#0d0818" stroke="#2a1245" stroke-width="1" />
+  <rect width="850" height="160" rx="12" fill="#041315" stroke="#0b424c" stroke-width="1.2" />
 
-  <!-- Dots Simulation Grid -->
-  <g opacity="0.85" transform="translate(25, 20)">
-    <!-- Column pattern dynamically generated -->
-    <g fill="#16111f">
-      <!-- Week 1 to 52 basic grid -->
-      <rect x="0" y="0" class="grid-dot" fill="#1b1228" />
-      <rect x="0" y="15" class="grid-dot" fill="#2d1345" />
-      <rect x="0" y="30" class="grid-dot" fill="#1b1228" />
-      <rect x="0" y="45" class="grid-dot" fill="#1b1228" />
-      <rect x="0" y="60" class="grid-dot" fill="#4d1b6e" />
-      <rect x="0" y="75" class="grid-dot" fill="#1b1228" />
-      <rect x="0" y="90" class="grid-dot" fill="#1b1228" />
-      <rect x="0" y="105" class="grid-dot" fill="#2d1345" />
+  <!-- Dots Simulation Grid in Emerald / Teal Palette -->
+  <g opacity="0.9" transform="translate(25, 20)">
+    <!-- Base empty grid -->
+    <g fill="#061a1d">
+      <!-- Week 1 to 52 grid -->
+      <rect x="0" y="0" class="grid-dot" fill="#082226" />
+      <rect x="0" y="15" class="grid-dot" fill="#0b424c" />
+      <rect x="0" y="30" class="grid-dot" fill="#082226" />
+      <rect x="0" y="45" class="grid-dot" fill="#082226" />
+      <rect x="0" y="60" class="grid-dot" fill="#0e5058" />
+      <rect x="0" y="75" class="grid-dot" fill="#082226" />
+      <rect x="0" y="90" class="grid-dot" fill="#082226" />
+      <rect x="0" y="105" class="grid-dot" fill="#0b424c" />
 
-      <!-- High activity clusters -->
-      <g fill="#3a1b4b">
-        <rect x="45" y="15" class="grid-dot" /><rect x="60" y="30" class="grid-dot" fill="#6b1e52" />
-        <rect x="75" y="45" class="grid-dot" fill="#a42d65" /><rect x="90" y="60" class="grid-dot" fill="#c84bff" />
-        <rect x="105" y="15" class="grid-dot" fill="#ff3b5c" /><rect x="120" y="30" class="grid-dot" />
-        <rect x="135" y="45" class="grid-dot" fill="#6b1e52" /><rect x="150" y="60" class="grid-dot" fill="#a42d65" />
-        <rect x="165" y="75" class="grid-dot" fill="#c84bff" /><rect x="180" y="90" class="grid-dot" fill="#00f5ff" />
-        <rect x="195" y="15" class="grid-dot" fill="#6b1e52" /><rect x="210" y="30" class="grid-dot" fill="#ff3b5c" />
-        <rect x="225" y="45" class="grid-dot" fill="#c84bff" /><rect x="240" y="60" class="grid-dot" fill="#a42d65" />
-        <rect x="255" y="75" class="grid-dot" fill="#6b1e52" /><rect x="270" y="90" class="grid-dot" />
-        <rect x="285" y="15" class="grid-dot" fill="#00f5ff" /><rect x="300" y="30" class="grid-dot" fill="#c84bff" />
-        <rect x="315" y="45" class="grid-dot" fill="#ff3b5c" /><rect x="330" y="60" class="grid-dot" fill="#a42d65" />
-        <rect x="345" y="75" class="grid-dot" fill="#6b1e52" /><rect x="360" y="90" class="grid-dot" />
-        <rect x="375" y="15" class="grid-dot" fill="#c84bff" /><rect x="390" y="30" class="grid-dot" fill="#00f5ff" />
-        <rect x="405" y="45" class="grid-dot" fill="#ff3b5c" /><rect x="420" y="60" class="grid-dot" fill="#a42d65" />
-        <rect x="435" y="75" class="grid-dot" fill="#6b1e52" /><rect x="450" y="90" class="grid-dot" fill="#c84bff" />
-        <rect x="465" y="15" class="grid-dot" fill="#00f5ff" /><rect x="480" y="30" class="grid-dot" fill="#ff3b5c" />
-        <rect x="495" y="45" class="grid-dot" fill="#c84bff" /><rect x="510" y="60" class="grid-dot" fill="#a42d65" />
-        <rect x="525" y="75" class="grid-dot" fill="#6b1e52" /><rect x="540" y="90" class="grid-dot" />
-        <rect x="555" y="15" class="grid-dot" fill="#ff3b5c" /><rect x="570" y="30" class="grid-dot" fill="#00f5ff" />
-        <rect x="585" y="45" class="grid-dot" fill="#c84bff" /><rect x="600" y="60" class="grid-dot" fill="#a42d65" />
-        <rect x="615" y="75" class="grid-dot" fill="#6b1e52" /><rect x="630" y="90" class="grid-dot" fill="#c84bff" />
-        <rect x="645" y="15" class="grid-dot" fill="#00f5ff" /><rect x="660" y="30" class="grid-dot" fill="#ff3b5c" />
-        <rect x="675" y="45" class="grid-dot" fill="#c84bff" /><rect x="690" y="60" class="grid-dot" fill="#a42d65" />
-        <rect x="705" y="75" class="grid-dot" fill="#6b1e52" /><rect x="720" y="90" class="grid-dot" fill="#00f5ff" />
-        <rect x="735" y="15" class="grid-dot" fill="#ff3b5c" /><rect x="750" y="30" class="grid-dot" fill="#c84bff" />
-        <rect x="765" y="45" class="grid-dot" fill="#00f5ff" /><rect x="780" y="60" class="grid-dot" fill="#a42d65" />
+      <!-- Activity clusters in Emerald, Jade & Cool Teal -->
+      <g fill="#0b424c">
+        <rect x="45" y="15" class="grid-dot" /><rect x="60" y="30" class="grid-dot" fill="#0e5058" />
+        <rect x="75" y="45" class="grid-dot" fill="#14b8a6" /><rect x="90" y="60" class="grid-dot" fill="#00d68f" />
+        <rect x="105" y="15" class="grid-dot" fill="#00f0ff" /><rect x="120" y="30" class="grid-dot" />
+        <rect x="135" y="45" class="grid-dot" fill="#0e5058" /><rect x="150" y="60" class="grid-dot" fill="#14b8a6" />
+        <rect x="165" y="75" class="grid-dot" fill="#00d68f" /><rect x="180" y="90" class="grid-dot" fill="#00f0ff" />
+        <rect x="195" y="15" class="grid-dot" fill="#0e5058" /><rect x="210" y="30" class="grid-dot" fill="#00d68f" />
+        <rect x="225" y="45" class="grid-dot" fill="#00f0ff" /><rect x="240" y="60" class="grid-dot" fill="#14b8a6" />
+        <rect x="255" y="75" class="grid-dot" fill="#0e5058" /><rect x="270" y="90" class="grid-dot" />
+        <rect x="285" y="15" class="grid-dot" fill="#00d68f" /><rect x="300" y="30" class="grid-dot" fill="#00f0ff" />
+        <rect x="315" y="45" class="grid-dot" fill="#14b8a6" /><rect x="330" y="60" class="grid-dot" fill="#00d68f" />
+        <rect x="345" y="75" class="grid-dot" fill="#0e5058" /><rect x="360" y="90" class="grid-dot" />
+        <rect x="375" y="15" class="grid-dot" fill="#00d68f" /><rect x="390" y="30" class="grid-dot" fill="#00f0ff" />
+        <rect x="405" y="45" class="grid-dot" fill="#14b8a6" /><rect x="420" y="60" class="grid-dot" fill="#0e5058" />
+        <rect x="435" y="75" class="grid-dot" fill="#0e5058" /><rect x="450" y="90" class="grid-dot" fill="#00d68f" />
+        <rect x="465" y="15" class="grid-dot" fill="#00f0ff" /><rect x="480" y="30" class="grid-dot" fill="#00d68f" />
+        <rect x="495" y="45" class="grid-dot" fill="#14b8a6" /><rect x="510" y="60" class="grid-dot" fill="#0e5058" />
+        <rect x="525" y="75" class="grid-dot" fill="#0e5058" /><rect x="540" y="90" class="grid-dot" />
+        <rect x="555" y="15" class="grid-dot" fill="#00f0ff" /><rect x="570" y="30" class="grid-dot" fill="#00d68f" />
+        <rect x="585" y="45" class="grid-dot" fill="#14b8a6" /><rect x="600" y="60" class="grid-dot" fill="#0e5058" />
+        <rect x="615" y="75" class="grid-dot" fill="#0e5058" /><rect x="630" y="90" class="grid-dot" fill="#00d68f" />
+        <rect x="645" y="15" class="grid-dot" fill="#00f0ff" /><rect x="660" y="30" class="grid-dot" fill="#00d68f" />
+        <rect x="675" y="45" class="grid-dot" fill="#14b8a6" /><rect x="690" y="60" class="grid-dot" fill="#0e5058" />
+        <rect x="705" y="75" class="grid-dot" fill="#0e5058" /><rect x="720" y="90" class="grid-dot" fill="#00f0ff" />
+        <rect x="735" y="15" class="grid-dot" fill="#00d68f" /><rect x="750" y="30" class="grid-dot" fill="#00f0ff" />
+        <rect x="765" y="45" class="grid-dot" fill="#14b8a6" /><rect x="780" y="60" class="grid-dot" fill="#0e5058" />
       </g>
     </g>
 
-    <!-- Animated Snake Eater -->
+    <!-- Animated Snake Eater in Emerald & Cool Teal -->
     <g class="snake-head" filter="url(#dotGlow)">
-      <rect x="0" y="30" class="grid-dot" fill="#00f5ff" />
-      <rect x="15" y="30" class="grid-dot" fill="#c84bff" />
-      <rect x="30" y="30" class="grid-dot" fill="#ff3b5c" />
+      <rect x="0" y="30" class="grid-dot" fill="#00d68f" />
+      <rect x="15" y="30" class="grid-dot" fill="#14b8a6" />
+      <rect x="30" y="30" class="grid-dot" fill="#00f0ff" />
       <rect x="45" y="30" class="grid-dot" fill="#ffffff" />
     </g>
   </g>
