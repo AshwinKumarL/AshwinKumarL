@@ -52,17 +52,17 @@
     <line x1="14" y1="26" x2="256" y2="26" stroke="#0e5058" stroke-width="0.8"/>
     
     <!-- Col 1: Total -->
-    <text x="24" y="52" class="stat-num">500+</text>
+    <text x="24" y="52" class="stat-num">60</text>
     <text x="24" y="68" class="stat-lbl">Total</text>
-    <text x="24" y="80" class="stat-sub">Yearly Activity</text>
+    <text x="24" y="80" class="stat-sub">Past Year</text>
 
     <!-- Col 2: This Week -->
-    <text x="110" y="52" class="stat-num" fill="#00f0ff">24</text>
+    <text x="110" y="52" class="stat-num" fill="#00f0ff">6</text>
     <text x="110" y="68" class="stat-lbl">This week</text>
     <text x="110" y="80" class="stat-sub">Recent commits</text>
 
     <!-- Col 3: Best Day -->
-    <text x="195" y="52" class="stat-num" fill="#14b8a6">36</text>
+    <text x="195" y="52" class="stat-num" fill="#14b8a6">9</text>
     <text x="195" y="68" class="stat-lbl">Best day</text>
     <text x="195" y="80" class="stat-sub">Peak velocity</text>
   </g>
@@ -74,12 +74,12 @@
     <line x1="14" y1="26" x2="196" y2="26" stroke="#0e5058" stroke-width="0.8"/>
     
     <!-- Col 1: Longest -->
-    <text x="24" y="50" class="stat-num">28</text>
+    <text x="24" y="50" class="stat-num">2d</text>
     <text x="24" y="64" class="stat-lbl">Longest</text>
     <text x="24" y="74" class="stat-sub">Consecutive days</text>
 
     <!-- Col 2: Current -->
-    <text x="120" y="50" class="stat-num" fill="#00f0ff">14</text>
+    <text x="120" y="50" class="stat-num" fill="#00f0ff">2d</text>
     <text x="120" y="64" class="stat-lbl">Current</text>
     <text x="120" y="74" class="stat-sub">Active streak</text>
   </g>

@@ -1,37 +1,47 @@
 import os
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
+import json
 
-# 52 weeks x 7 days
-np.random.seed(42)
+# Load exact parsed metrics
+with open('scripts/real_stats.json', 'r', encoding='utf-8') as f:
+    stats = json.load(f)
 
+total_count = stats['total']          # 60
+this_week_count = stats['this_week']  # 6
+best_day_count = stats['best_day_count'] # 9
+longest_streak = stats['longest_streak'] # 2
+current_streak = stats['current_streak'] # 2
+daily_counts = stats['daily_counts']
+
+# Populate 52 x 7 grid with real daily counts
 grid = np.zeros((52, 7), dtype=int)
-for x in range(52):
-    for y in range(7):
-        r = np.random.random()
-        if x > 38: # Recent months: peak activity
-            if r > 0.32:
-                grid[x, y] = np.random.choice([1, 2, 3, 4], p=[0.30, 0.35, 0.22, 0.13])
-        elif x > 22:
-            if r > 0.50:
-                grid[x, y] = np.random.choice([1, 2, 3], p=[0.45, 0.35, 0.20])
-        else:
-            if r > 0.70:
-                grid[x, y] = np.random.choice([1, 2], p=[0.70, 0.30])
+for idx, count in enumerate(daily_counts[:52*7]):
+    x = idx // 7
+    y = idx % 7
+    if count == 0:
+        lvl = 0
+    elif count <= 2:
+        lvl = 1
+    elif count <= 4:
+        lvl = 2
+    elif count <= 6:
+        lvl = 3
+    else:
+        lvl = 4
+    grid[x, y] = lvl
 
 # Canvas Dimensions: 980 x 430 (rendered at 2X for retina sharpness)
 W, H = 980, 430
 SCALE = 2
 W2, H2 = W * SCALE, H * SCALE
 
-# Isometric projection parameters
 origin_x = 240 * SCALE
 origin_y = 175 * SCALE
 tile_w = 9.2 * SCALE
 tile_h = 4.8 * SCALE
-h_unit = 7.5 * SCALE
+h_unit = 8.5 * SCALE
 
-# Colors: EMERALD, PINE GREEN, JADE, COOL TEAL, DEEP TEAL
 BG_DARK     = (4, 19, 21)
 CARD_BG     = (9, 34, 38)
 BORDER_TEAL = (14, 80, 88)
@@ -55,7 +65,6 @@ stat_num   = ImageFont.truetype('C:\\Windows\\Fonts\\segoeuib.ttf', 20 * SCALE)
 stat_lbl   = ImageFont.truetype('C:\\Windows\\Fonts\\segoeuib.ttf', 11 * SCALE)
 stat_sub   = ImageFont.truetype('C:\\Windows\\Fonts\\segoeui.ttf', 10 * SCALE)
 
-# Collect all blocks and sort back-to-front
 blocks = []
 for x in range(52):
     for y in range(7):
@@ -80,9 +89,9 @@ for f_idx in range(TOTAL_FRAMES):
         
     # Top Header
     draw.text((25*SCALE, 20*SCALE), '3D ISOMETRIC CONTRIBUTION MATRIX', font=title_font, fill=MINT_WHITE)
-    draw.text((25*SCALE, 42*SCALE), 'Visualizing GitHub activity landscape in real-time isometric voxels', font=sub_font, fill=MUTED_MINT)
+    draw.text((25*SCALE, 42*SCALE), 'Visualizing AshwinKumarL live GitHub activity landscape in 3D voxels', font=sub_font, fill=MUTED_MINT)
     
-    # Top Right Stats Card: CONTRIBUTIONS
+    # Top Right Stats Card: REAL CONTRIBUTIONS
     cx = 680 * SCALE
     cy = 18 * SCALE
     cw = 275 * SCALE
@@ -91,22 +100,22 @@ for f_idx in range(TOTAL_FRAMES):
     draw.text((cx + 14*SCALE, cy + 8*SCALE), 'CONTRIBUTIONS', font=stat_lbl, fill=COOL_TEAL)
     draw.line([cx + 14*SCALE, cy + 26*SCALE, cx + cw - 14*SCALE, cy + 26*SCALE], fill=BORDER_TEAL, width=1*SCALE)
     
-    # Col 1: Total
-    draw.text((cx + 20*SCALE, cy + 34*SCALE), '500+', font=stat_num, fill=EMERALD)
+    # Col 1: Real Total (60)
+    draw.text((cx + 20*SCALE, cy + 34*SCALE), str(total_count), font=stat_num, fill=EMERALD)
     draw.text((cx + 20*SCALE, cy + 60*SCALE), 'Total', font=stat_lbl, fill=MINT_WHITE)
-    draw.text((cx + 20*SCALE, cy + 74*SCALE), 'Yearly Activity', font=stat_sub, fill=MUTED_MINT)
+    draw.text((cx + 20*SCALE, cy + 74*SCALE), 'Past Year', font=stat_sub, fill=MUTED_MINT)
     
-    # Col 2: This Week
-    draw.text((cx + 110*SCALE, cy + 34*SCALE), '24', font=stat_num, fill=COOL_TEAL)
+    # Col 2: Real This Week (6)
+    draw.text((cx + 110*SCALE, cy + 34*SCALE), str(this_week_count), font=stat_num, fill=COOL_TEAL)
     draw.text((cx + 110*SCALE, cy + 60*SCALE), 'This week', font=stat_lbl, fill=MINT_WHITE)
     draw.text((cx + 110*SCALE, cy + 74*SCALE), 'Recent commits', font=stat_sub, fill=MUTED_MINT)
     
-    # Col 3: Best Day
-    draw.text((cx + 200*SCALE, cy + 34*SCALE), '36', font=stat_num, fill=JADE)
+    # Col 3: Real Best Day (9)
+    draw.text((cx + 200*SCALE, cy + 34*SCALE), str(best_day_count), font=stat_num, fill=JADE)
     draw.text((cx + 200*SCALE, cy + 60*SCALE), 'Best day', font=stat_lbl, fill=MINT_WHITE)
-    draw.text((cx + 200*SCALE, cy + 74*SCALE), 'Peak velocity', font=stat_sub, fill=MUTED_MINT)
+    draw.text((cx + 200*SCALE, cy + 74*SCALE), 'Peak activity', font=stat_sub, fill=MUTED_MINT)
     
-    # Bottom Left Stats Card: STREAKS & FLOW
+    # Bottom Left Stats Card: REAL STREAKS
     sx = 25 * SCALE
     sy = 305 * SCALE
     sw = 210 * SCALE
@@ -115,15 +124,17 @@ for f_idx in range(TOTAL_FRAMES):
     draw.text((sx + 14*SCALE, sy + 8*SCALE), 'STREAKS & FLOW', font=stat_lbl, fill=EMERALD)
     draw.line([sx + 14*SCALE, sy + 26*SCALE, sx + sw - 14*SCALE, sy + 26*SCALE], fill=BORDER_TEAL, width=1*SCALE)
     
-    draw.text((sx + 20*SCALE, sy + 34*SCALE), '28', font=stat_num, fill=EMERALD)
+    # Real Longest Streak
+    draw.text((sx + 20*SCALE, sy + 34*SCALE), f"{longest_streak}d", font=stat_num, fill=EMERALD)
     draw.text((sx + 20*SCALE, sy + 60*SCALE), 'Longest', font=stat_lbl, fill=MINT_WHITE)
     draw.text((sx + 20*SCALE, sy + 74*SCALE), 'Consecutive days', font=stat_sub, fill=MUTED_MINT)
     
-    draw.text((sx + 115*SCALE, sy + 34*SCALE), '14', font=stat_num, fill=COOL_TEAL)
+    # Real Current Streak
+    draw.text((sx + 115*SCALE, sy + 34*SCALE), f"{current_streak}d", font=stat_num, fill=COOL_TEAL)
     draw.text((sx + 115*SCALE, sy + 60*SCALE), 'Current', font=stat_lbl, fill=MINT_WHITE)
     draw.text((sx + 115*SCALE, sy + 74*SCALE), 'Active streak', font=stat_sub, fill=MUTED_MINT)
     
-    # Bottom Right Legend: MOVED CLEANLY TO THE FAR RIGHT SIDE (NO OVERLAP!)
+    # Bottom Right Legend: Positioned cleanly with zero overlap
     lx = 770 * SCALE
     ly = 385 * SCALE
     draw.text((lx - 32*SCALE, ly), 'Less', font=stat_sub, fill=MUTED_MINT)
@@ -132,10 +143,9 @@ for f_idx in range(TOTAL_FRAMES):
         draw.rounded_rectangle([box_x, ly - 2*SCALE, box_x + 12*SCALE, ly + 10*SCALE], radius=2*SCALE, fill=colors[c_lvl]['top'], outline=(3, 16, 18), width=1)
     draw.text((lx + 5 * 18 * SCALE + 6 * SCALE, ly), 'More', font=stat_sub, fill=MUTED_MINT)
     
-    # --- RENDER ANIMATED 3D ISOMETRIC BLOCKS ---
+    # --- RENDER 3D ISOMETRIC VOXELS FROM REAL COMMIT HISTORY ---
     for x, y, lvl, _ in blocks:
-        # Extrusion wave calculation: wave sweeps from x=0 to x=51 over frames
-        wave_start = (x / 52.0) * 20.0 # start frame
+        wave_start = (x / 52.0) * 20.0
         dur = 8.0
         
         if f_idx < wave_start:
@@ -143,19 +153,16 @@ for f_idx in range(TOTAL_FRAMES):
         else:
             growth = min(1.0, (f_idx - wave_start) / dur)
             
-        # Smooth quintic ease-out growth
         ease_g = 6*(growth**5) - 15*(growth**4) + 10*(growth**3)
         
         bx = origin_x + (x * tile_w) - (y * tile_w)
         by = origin_y + (x * tile_h * 0.7) + (y * tile_h * 0.7)
         
-        # Extrusion height at this frame
         target_h = (lvl * h_unit) if lvl > 0 else 1.5 * SCALE
         block_h = (1.5 * SCALE) + (target_h - 1.5 * SCALE) * ease_g
         
         c = colors[lvl] if ease_g > 0.1 else colors[0]
         
-        # 3D Cube geometry
         top_pts = [
             (bx, by - block_h),
             (bx + tile_w, by + tile_h - block_h),
@@ -184,7 +191,6 @@ for f_idx in range(TOTAL_FRAMES):
     p_frame = final_frame.convert('P', palette=Image.Palette.ADAPTIVE, colors=256)
     frames.append(p_frame)
 
-# Save with loop=1: plays once smoothly on page visit and parks on final state
 durations = [45] * (len(frames) - 1) + [65535]
 
 frames[0].save(
@@ -196,7 +202,6 @@ frames[0].save(
     optimize=True
 )
 
-# Also save static PNG
 frames[-1].convert('RGB').save('assets/github-contribution-3d.png')
 
-print('Generated animated 3D contribution matrix (GIF & PNG) with moved legend successfully!')
+print(f'Successfully built 3D contribution matrix with REAL metrics: Total={total_count}, Week={this_week_count}, Best={best_day_count}, Streak={longest_streak}d!')
