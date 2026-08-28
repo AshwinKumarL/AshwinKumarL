@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- 🔮 Cyberpunk Engineering HUD & Photo Banner -->
-  <img src="assets/profile-banner.png" alt="Ashwin Kumar L — Engineering Profile HUD" width="100%" />
+  <!-- 🔮 Profile Banner: Photo + Sliding About Me -->
+  <img src="assets/profile-banner.svg" alt="Ashwin Kumar L — Profile Banner" width="100%" />
 
   <br/><br/>
 
