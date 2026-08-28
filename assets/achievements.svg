@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Emerald & Deep Teal Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d0818" />
-      <stop offset="50%" stop-color="#180b2a" />
-      <stop offset="100%" stop-color="#0a0512" />
+      <stop offset="0%" stop-color="#041315" />
+      <stop offset="50%" stop-color="#082226" />
+      <stop offset="100%" stop-color="#030e10" />
     </linearGradient>
 
-    <!-- Animated Border Gradient -->
+    <!-- Animated Emerald, Jade & Cool Teal Border Gradient -->
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c84bff">
-        <animate attributeName="stop-color" values="#c84bff;#00f5ff;#ff3b5c;#c84bff" dur="8s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#00d68f">
+        <animate attributeName="stop-color" values="#00d68f;#00f0ff;#14b8a6;#00d68f" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color="#00f5ff">
-        <animate attributeName="stop-color" values="#00f5ff;#ff3b5c;#c84bff;#00f5ff" dur="8s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#00f0ff">
+        <animate attributeName="stop-color" values="#00f0ff;#14b8a6;#00d68f;#00f0ff" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="100%" stop-color="#ff3b5c">
-        <animate attributeName="stop-color" values="#ff3b5c;#c84bff;#00f5ff;#ff3b5c" dur="8s" repeatCount="indefinite" />
+      <stop offset="100%" stop-color="#14b8a6">
+        <animate attributeName="stop-color" values="#14b8a6;#00d68f;#00f0ff;#14b8a6" dur="8s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
-    <!-- Card Background Gradient -->
+    <!-- Deep Jade Card Background Gradient -->
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#24123d" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#120822" stop-opacity="0.9" />
+      <stop offset="0%" stop-color="#0b2b2f" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#06181b" stop-opacity="0.95" />
     </linearGradient>
 
     <!-- Filters -->
@@ -49,7 +49,7 @@
         font-weight: 800;
         font-size: 19px;
         letter-spacing: 5px;
-        fill: #f5f0ff;
+        fill: #e6fffa;
       }
       .badge-title {
         font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -62,7 +62,7 @@
         font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
         font-weight: 500;
         font-size: 11.5px;
-        fill: #bfa8d8;
+        fill: #99f6e4;
       }
       .laser-line {
         stroke-dasharray: 90 400;
@@ -89,76 +89,76 @@
   </defs>
 
   <!-- Main Background Panel -->
-  <rect x="2" y="2" width="996" height="236" rx="18" fill="url(#bgGrad)" stroke="#2b1747" stroke-width="1.5" />
+  <rect x="2" y="2" width="996" height="236" rx="18" fill="url(#bgGrad)" stroke="#0b424c" stroke-width="1.5" />
 
-  <!-- Animated Glowing Laser Border -->
+  <!-- Animated Glowing Laser Border in Emerald/Teal -->
   <rect x="2" y="2" width="996" height="236" rx="18" fill="none" stroke="url(#borderGrad)" stroke-width="2.5" class="laser-line" filter="url(#neonGlow)" />
 
   <!-- Tech Corner Accents -->
-  <path d="M 18 10 L 10 10 L 10 18" fill="none" stroke="#00f5ff" stroke-width="2.5" />
-  <path d="M 982 10 L 990 10 L 990 18" fill="none" stroke="#ff3b5c" stroke-width="2.5" />
-  <path d="M 18 230 L 10 230 L 10 222" fill="none" stroke="#c84bff" stroke-width="2.5" />
-  <path d="M 982 230 L 990 230 L 990 222" fill="none" stroke="#00f5ff" stroke-width="2.5" />
+  <path d="M 18 10 L 10 10 L 10 18" fill="none" stroke="#00f0ff" stroke-width="2.5" />
+  <path d="M 982 10 L 990 10 L 990 18" fill="none" stroke="#00d68f" stroke-width="2.5" />
+  <path d="M 18 230 L 10 230 L 10 222" fill="none" stroke="#14b8a6" stroke-width="2.5" />
+  <path d="M 982 230 L 990 230 L 990 222" fill="none" stroke="#00f0ff" stroke-width="2.5" />
 
   <!-- Header Section -->
   <g transform="translate(500, 38)">
     <text x="0" y="0" text-anchor="middle" class="title-text">✦ ACHIEVEMENTS UNLOCKED ✦</text>
-    <line x1="-250" y1="12" x2="250" y2="12" stroke="url(#borderGrad)" stroke-width="1.5" opacity="0.7" />
+    <line x1="-250" y1="12" x2="250" y2="12" stroke="url(#borderGrad)" stroke-width="1.5" opacity="0.8" />
   </g>
 
   <!-- 4 Achievement Cards in 1 Row -->
 
   <!-- Card 1: LeetCode (x=30) -->
   <g transform="translate(30, 72)">
-    <rect width="220" height="135" rx="14" fill="url(#cardGrad)" stroke="#ffa116" stroke-width="1.2" stroke-opacity="0.7" />
-    <circle cx="110" cy="35" r="22" fill="#241505" stroke="#ffa116" stroke-width="1.4" filter="url(#softGlow)" />
+    <rect width="220" height="135" rx="14" fill="url(#cardGrad)" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.7" />
+    <circle cx="110" cy="35" r="22" fill="#041f24" stroke="#00f0ff" stroke-width="1.4" filter="url(#softGlow)" />
     <!-- LeetCode Official Vector Logo -->
     <svg x="98" y="23" width="24" height="24" viewBox="0 0 24 24">
       <path fill="#ffa116" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
     </svg>
     <text x="110" y="76" text-anchor="middle" class="badge-title">150+ LEETCODE</text>
     <text x="110" y="94" text-anchor="middle" class="badge-sub">Problem Solver &amp; DSA</text>
-    <rect x="65" y="104" width="90" height="18" rx="9" fill="#ffa116" fill-opacity="0.2" stroke="#ffa116" stroke-width="0.8" />
-    <text x="110" y="117" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffcca0" font-family="'Segoe UI', sans-serif">ALGORITHMS</text>
-    <circle cx="202" cy="18" r="3" fill="#ffa116" class="pulse" />
+    <rect x="65" y="104" width="90" height="18" rx="9" fill="#00f0ff" fill-opacity="0.2" stroke="#00f0ff" stroke-width="0.8" />
+    <text x="110" y="117" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a5f8ff" font-family="'Segoe UI', sans-serif">ALGORITHMS</text>
+    <circle cx="202" cy="18" r="3" fill="#00f0ff" class="pulse" />
   </g>
 
   <!-- Card 2: HackerRank Gold Python (x=272) -->
   <g transform="translate(272, 72)">
-    <rect width="220" height="135" rx="14" fill="url(#cardGrad)" stroke="#00ea64" stroke-width="1.2" stroke-opacity="0.7" />
-    <circle cx="110" cy="35" r="22" fill="#04200f" stroke="#00ea64" stroke-width="1.4" filter="url(#softGlow)" />
+    <rect width="220" height="135" rx="14" fill="url(#cardGrad)" stroke="#00d68f" stroke-width="1.2" stroke-opacity="0.7" />
+    <circle cx="110" cy="35" r="22" fill="#032117" stroke="#00d68f" stroke-width="1.4" filter="url(#softGlow)" />
     <!-- HackerRank Official Vector Logo -->
     <svg x="98" y="23" width="24" height="24" viewBox="0 0 24 24">
       <path fill="#00ea64" d="M12 0a12 12 0 1 0 12 12A12.013 12.013 0 0 0 12 0zm3.8 17.5h-2.1v-4.1h-3.4v4.1H8.2V6.5h2.1v4.3h3.4V6.5h2.1v11z"/>
     </svg>
     <text x="110" y="76" text-anchor="middle" class="badge-title">HACKERRANK GOLD</text>
     <text x="110" y="94" text-anchor="middle" class="badge-sub">Gold Badge in Python</text>
-    <rect x="65" y="104" width="90" height="18" rx="9" fill="#00ea64" fill-opacity="0.2" stroke="#00ea64" stroke-width="0.8" />
-    <text x="110" y="117" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a0ffd0" font-family="'Segoe UI', sans-serif">PYTHON 5★</text>
-    <circle cx="202" cy="18" r="3" fill="#00ea64" class="pulse-delay-1" />
+    <rect x="65" y="104" width="90" height="18" rx="9" fill="#00d68f" fill-opacity="0.2" stroke="#00d68f" stroke-width="0.8" />
+    <text x="110" y="117" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a7f3d0" font-family="'Segoe UI', sans-serif">PYTHON 5★</text>
+    <circle cx="202" cy="18" r="3" fill="#00d68f" class="pulse-delay-1" />
   </g>
 
   <!-- Card 3: Kick Start : Idea Challenge (x=514) -->
   <g transform="translate(514, 72)">
-    <rect width="220" height="135" rx="14" fill="url(#cardGrad)" stroke="#00f5ff" stroke-width="1.2" stroke-opacity="0.6" />
-    <circle cx="110" cy="35" r="22" fill="#0c1d2e" stroke="#00f5ff" stroke-width="1.4" filter="url(#softGlow)" />
+    <rect width="220" height="135" rx="14" fill="url(#cardGrad)" stroke="#14b8a6" stroke-width="1.2" stroke-opacity="0.7" />
+    <circle cx="110" cy="35" r="22" fill="#042022" stroke="#14b8a6" stroke-width="1.4" filter="url(#softGlow)" />
     <text x="110" y="43" text-anchor="middle" font-size="20">💡</text>
     <text x="110" y="76" text-anchor="middle" class="badge-title">KICK START — 1ST</text>
     <text x="110" y="94" text-anchor="middle" class="badge-sub">Idea Challenge Winner</text>
-    <rect x="62" y="104" width="96" height="18" rx="9" fill="#00f5ff" fill-opacity="0.2" stroke="#00f5ff" stroke-width="0.8" />
-    <text x="110" y="117" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a5f8ff" font-family="'Segoe UI', sans-serif">IDEATHON 1ST</text>
-    <circle cx="202" cy="18" r="3" fill="#00f5ff" class="pulse" />
+    <rect x="62" y="104" width="96" height="18" rx="9" fill="#14b8a6" fill-opacity="0.2" stroke="#14b8a6" stroke-width="0.8" />
+    <text x="110" y="117" text-anchor="middle" font-size="9.5" font-weight="700" fill="#99f6e4" font-family="'Segoe UI', sans-serif">IDEATHON 1ST</text>
+    <circle cx="202" cy="18" r="3" fill="#14b8a6" class="pulse" />
   </g>
 
   <!-- Card 4: Code Rush 2nd Coding Contest (x=756) -->
   <g transform="translate(756, 72)">
-    <rect width="220" height="135" rx="14" fill="url(#cardGrad)" stroke="#ff3b5c" stroke-width="1.2" stroke-opacity="0.6" />
-    <circle cx="110" cy="35" r="22" fill="#2d0c18" stroke="#ff3b5c" stroke-width="1.4" filter="url(#softGlow)" />
+    <rect width="220" height="135" rx="14" fill="url(#cardGrad)" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.7" />
+    <circle cx="110" cy="35" r="22" fill="#04222a" stroke="#00f0ff" stroke-width="1.4" filter="url(#softGlow)" />
     <text x="110" y="43" text-anchor="middle" font-size="20">🥈</text>
     <text x="110" y="76" text-anchor="middle" class="badge-title">CODE RUSH — 2ND</text>
     <text x="110" y="94" text-anchor="middle" class="badge-sub">Coding Contest Runner Up</text>
-    <rect x="55" y="104" width="110" height="18" rx="9" fill="#ff3b5c" fill-opacity="0.2" stroke="#ff3b5c" stroke-width="0.8" />
-    <text x="110" y="117" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb4c2" font-family="'Segoe UI', sans-serif">CODING CONTEST</text>
-    <circle cx="202" cy="18" r="3" fill="#ff3b5c" class="pulse-delay-2" />
+    <rect x="55" y="104" width="110" height="18" rx="9" fill="#00f0ff" fill-opacity="0.2" stroke="#00f0ff" stroke-width="0.8" />
+    <text x="110" y="117" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a5f8ff" font-family="'Segoe UI', sans-serif">CODING CONTEST</text>
+    <circle cx="202" cy="18" r="3" fill="#00f0ff" class="pulse-delay-2" />
   </g>
 </svg>
